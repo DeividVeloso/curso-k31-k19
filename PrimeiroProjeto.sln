@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String", "String\String.csproj", "{494853BD-EF98-4A1F-9484-175C1406E81C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colecoes", "Colecoes\Colecoes.csproj", "{81C8AEE8-8830-4D4D-A3E3-F7B952750EF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{494853BD-EF98-4A1F-9484-175C1406E81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{494853BD-EF98-4A1F-9484-175C1406E81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{494853BD-EF98-4A1F-9484-175C1406E81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C8AEE8-8830-4D4D-A3E3-F7B952750EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C8AEE8-8830-4D4D-A3E3-F7B952750EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C8AEE8-8830-4D4D-A3E3-F7B952750EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C8AEE8-8830-4D4D-A3E3-F7B952750EF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

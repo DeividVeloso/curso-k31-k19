@@ -10,6 +10,7 @@ namespace String
 	{
 		static void Main(string[] args)
 		{
+
 		}
 	}
 }
