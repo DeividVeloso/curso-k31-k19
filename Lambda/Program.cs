@@ -8,7 +8,7 @@ namespace Lambda
 {
 	class Program
 	{
-		delegate bool Filtro(Conta c);
+		//delegate bool Filtro(Conta c);
 
 		static void Main(string[] args)
 		{
@@ -23,53 +23,56 @@ namespace Lambda
 				new Conta { Numero = 203 , Saldo = 600}
 			};
 
-			Filtro filtroContasParaOferecerCredito = FiltraContaNegativa;
-			Filtro filtroContasParaOferecerInvestimento = FiltraContaParaInvestimento;
+			var volume = contas.Sum(c => c.Saldo);
+			Console.WriteLine(volume);
+
+			//Filtro filtroContasParaOferecerCredito = FiltraContaNegativa;
+			//Filtro filtroContasParaOferecerInvestimento = FiltraContaParaInvestimento;
 
 			// Contas com saldo negativo
-			Console.WriteLine(" Contas com saldo negativo : ");
-			List<Conta> contasSaldoNegativo = Filtrar(contas, filtroContasParaOferecerCredito);
-			Imprime(contasSaldoNegativo);
+			//Console.WriteLine(" Contas com saldo negativo : ");
+			//List<Conta> contasSaldoNegativo = Filtrar(contas, filtroContasParaOferecerCredito);
+			//Imprime(contasSaldoNegativo);
 
-			// Contas com saldo acima de 10 k
-			Console.WriteLine(" Contas com saldo acima de 10 k : ");
-			List<Conta> contasSaldoAcima10k = Filtrar(contas, filtroContasParaOferecerInvestimento);
-			Imprime(contasSaldoAcima10k);
+			//// Contas com saldo acima de 10 k
+			//Console.WriteLine(" Contas com saldo acima de 10 k : ");
+			//List<Conta> contasSaldoAcima10k = Filtrar(contas, filtroContasParaOferecerInvestimento);
+			//Imprime(contasSaldoAcima10k);
 
 		}
 
-		static List<Conta> Filtrar(List<Conta> contas, Filtro filtro)
-		{
-			List<Conta> contasFiltradas = new List<Conta>();
-			foreach (var conta in contas)
-			{
-				if (filtro(conta))
-				{
-					contasFiltradas.Add(conta);
-				}
-			}
-			return contasFiltradas;
-		}
+		//static List<Conta> Filtrar(List<Conta> contas, Filtro filtro)
+		//{
+		//	List<Conta> contasFiltradas = new List<Conta>();
+		//	foreach (var conta in contas)
+		//	{
+		//		if (filtro(conta))
+		//		{
+		//			contasFiltradas.Add(conta);
+		//		}
+		//	}
+		//	return contasFiltradas;
+		//}
 
 
-		static bool FiltraContaNegativa(Conta conta)
-		{
-			return conta.Saldo < 0;
-		}
+		//static bool FiltraContaNegativa(Conta conta)
+		//{
+		//	return conta.Saldo < 0;
+		//}
 
-		static bool FiltraContaParaInvestimento(Conta conta)
-		{
-			return conta.Saldo >= 10000;
-		}
+		//static bool FiltraContaParaInvestimento(Conta conta)
+		//{
+		//	return conta.Saldo >= 10000;
+		//}
 
-		static void Imprime(List<Conta> contas)
-		{
-			foreach (var conta in contas)
-			{
-				Console.WriteLine(" Número : {0} , Saldo : {1} ", conta.Numero, conta.Saldo);
-			}
-			Console.WriteLine();
-		}
+		//static void Imprime(List<Conta> contas)
+		//{
+		//	foreach (var conta in contas)
+		//	{
+		//		Console.WriteLine(" Número : {0} , Saldo : {1} ", conta.Numero, conta.Saldo);
+		//	}
+		//	Console.WriteLine();
+		//}
 
 
 	}
