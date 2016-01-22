@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto
 {
-	class NameSpace
+	public class Cliente
 	{
+		public int ClienteID { get; set; }
 	}
 }
